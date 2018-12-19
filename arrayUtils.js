@@ -5,6 +5,7 @@
  * @param {Number} row
  * @param {Number} col
  * @param {Number} initialValue
+ * @returns {Array}
  */
 function createMatrix(row, col, initialValue) {
   let matrix = [];

@@ -17,3 +17,16 @@ function createMatrix(row, col, initialValue) {
   }
   return matrix;
 }
+
+/**
+ * 取数组里的某一属性组成新的数组
+ * @param {Array} arr
+ * @param {String} attribute
+ * @returns {Array}
+ */
+function mergeValue(arr, attribute) {
+  return arr.reduce(
+    (accumulator, currentValue) => [...accumulator, currentValue[attribute]],
+    []
+  );
+}

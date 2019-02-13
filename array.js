@@ -30,3 +30,12 @@ function mergeValue(arr, attribute) {
     []
   );
 }
+
+/**
+ * 寻找数组中是否包含目标元素（兼容嵌套数组）
+ * @param {Array} arr arr
+ * @param {Any} target 目标
+ */
+function exist(arr, target) {
+  return arr.some(el => el.target === target);
+}

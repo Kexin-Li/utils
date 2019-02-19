@@ -22,3 +22,23 @@ function isEmpty(value) {
     return true;
   }
 }
+
+/**
+ * 解析 query(string) 为 Object 简易版
+ * @param {String} input query: location.search
+ */
+function parseQuery(input) {
+  input = input.trim().replace(/^[?#&]/, "");
+  let ret = Object.create(null);
+
+  for (let param of input.split("&")) {
+    let [key, value] = param.replace(/\+/g, " ").split("=");
+    if (ret[key] === undefined) {
+      ret[key] = value;
+    } else {
+      ret[key] = [].concat(ret[key], value);
+    }
+  }
+
+  return ret;
+}

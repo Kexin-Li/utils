@@ -39,3 +39,15 @@ function mergeValue(arr, attribute) {
 function exist(arr, target) {
   return arr.some(el => el.target === target);
 }
+
+/**
+ * 交换数组元素
+ * @param {Array} arr
+ * @param {Number} p 交换元素的位置
+ * @param {Number} q 交换元素的位置
+ */
+function swap(arr, p, q) {
+  // 这样就修改了参数
+  [arr[p], arr[q]] = [arr[q], arr[p]];
+  return arr;
+}

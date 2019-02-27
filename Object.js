@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var _hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -28,11 +28,11 @@ function isEmpty(value) {
  * @param {String} input query: location.search
  */
 function parseQuery(input) {
-  input = input.trim().replace(/^[?#&]/, "");
+  input = input.trim().replace(/^[?#&]/, '');
   let ret = Object.create(null);
 
-  for (let param of input.split("&")) {
-    let [key, value] = param.replace(/\+/g, " ").split("=");
+  for (let param of input.split('&')) {
+    let [key, value] = param.replace(/\+/g, ' ').split('=');
     if (ret[key] === undefined) {
       ret[key] = value;
     } else {

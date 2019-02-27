@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * 替换字符串中的所有子串

@@ -110,6 +110,23 @@ function equal(val1, val2) {
     : equalArray(val1, val2);
 }
 
-const val1 = { a: [1, '2'], b: 2 };
-const val2 = { b: 2, a: [1, 2] };
-console.log(equal(val1, val2));
+/**
+ * JS 中的值传递。byValue1 和 byValue2 都会改变 arr 的值。byValue3 不会。
+ */
+const arr = [0, 1, 2, 3, 4];
+
+function byValue1(arr) {
+  arr.push(5);
+}
+
+function byValue2(arr) {
+  const arrCopy = arr;
+  arrCopy.push(5);
+}
+
+function byValue3(arr) {
+  arr = 5;
+}
+
+byValue(arr);
+console.log(arr);

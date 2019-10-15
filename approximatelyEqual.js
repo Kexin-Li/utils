@@ -4,7 +4,7 @@
  * @param {number} v1
  * @param {number} v2
  * @param {number} epsilon
- * @returns true or false
+ * @returns {boolean}
  * @example
  *
  * approximatelyEqual(0.8, 0.9, 0.1)

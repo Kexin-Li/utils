@@ -3,7 +3,7 @@
  *
  * @param {array} arr target array
  * @param {function} fn additional function
- * @returns {boolean} true or false
+ * @returns {boolean}
  * @example
  *
  * all([1,2,3], x => x > 1)

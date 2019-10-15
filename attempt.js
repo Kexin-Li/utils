@@ -3,7 +3,7 @@
  *
  * @param {function} fn target function
  * @param  {...any} args arguments
- * @returns results or Error object
+ * @returns {object} results or Error object
  * @example
  *
  * const res = attempt(a => a + 1, 10)

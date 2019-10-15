@@ -2,7 +2,7 @@
  * 判断数组里的所有元素是否都相等
  *
  * @param {array} arr target array
- * @returns true or false
+ * @returns {boolean}
  * @example
  *
  * allEqual([1,2,3])

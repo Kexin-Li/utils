@@ -12,6 +12,8 @@
  * is (Object, {a: 1})
  * // => true
  */
-const is = (type, val) => ![, null].includes(val) && val.constructor === type;
+function is(type, val) {
+  return ![, null].includes(val) && val.constructor === type;
+}
 
 export default is;

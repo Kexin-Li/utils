@@ -12,11 +12,12 @@
  * flatten([1,[2,3,[4,5,6]]])
  * // => [1,2,3,[4,5,6]]
  */
-const flatten = (arr, depth = 1) =>
-  arr.reduce(
+function flatten(arr, depth = 1) {
+  return arr.reduce(
     (a, v) =>
       a.concat(depth > 1 && Array.isArray(v) ? flatten(v, depth - 1) : v),
     []
   );
+}
 
 export default flatten;

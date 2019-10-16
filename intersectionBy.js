@@ -13,9 +13,9 @@
  * intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor)
  * // => [2.1]
  */
-const intersectionBy = (a, b, fn) => {
+function intersectionBy(a, b, fn) {
   const s = new Set(b.map(fn));
   return a.filter(x => s.has(fn(x)));
-};
+}
 
 export default intersectionBy;

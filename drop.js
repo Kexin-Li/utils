@@ -9,6 +9,8 @@
  * drop([1,2,3,4,5])
  * // => [2,3,4,5]
  */
-const drop = (arr, n = 1) => arr.slice(n);
+function drop(arr, n = 1) {
+  return arr.slice(n);
+}
 
 export default drop;

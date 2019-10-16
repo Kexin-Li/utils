@@ -11,6 +11,8 @@
  * isNumber('2')
  * // => false
  */
-const isNumber = val => !isNaN(parseFloat(n)) && isFinite(n);
+function isNumber(val) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
 
 export default isNumber;

@@ -11,6 +11,8 @@
  * isString({a: 1})
  * // => false
  */
-const isString = val => typeof val === 'string';
+function isString(val) {
+  return typeof val === 'string';
+}
 
 export default isString;

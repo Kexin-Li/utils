@@ -11,6 +11,8 @@
  * byteSize('Hello World');
  * // => 11
  */
-const byteSize = str => new Blob([str]).size;
+function byteSize(str) {
+  return new Blob([str]).size;
+}
 
 export default byteSize;

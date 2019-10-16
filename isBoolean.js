@@ -11,6 +11,8 @@
  * isBoolean(2)
  * // => false
  */
-const isBoolean = val => typeof val === 'boolean';
+function isBoolean(val) {
+  return typeof val === 'boolean';
+}
 
 export default isBoolean;

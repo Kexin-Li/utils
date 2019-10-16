@@ -14,6 +14,8 @@
  * isNull(3)
  * // => false
  */
-const isNull = val => val === null;
+function isNull(val) {
+  return val === null;
+}
 
 export default isNull;

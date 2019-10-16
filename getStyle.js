@@ -9,6 +9,8 @@
  * getStyle(document.querySelector('p'), 'font-size')
  * // => "16px"
  */
-const getStyle = (el, ruleName) => getComputedStyle(el)[ruleName];
+function getStyle(el, ruleName) {
+  return getComputedStyle(el)[ruleName];
+}
 
 export default getStyle;

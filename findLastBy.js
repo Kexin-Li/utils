@@ -9,6 +9,8 @@
  * findLast([1,2,3], v => v <= 1)
  * // 2
  */
-const findLastBy = (arr, fn) => arr.filter(fn).pop();
+function findLastBy(arr, fn) {
+  return arr.filter(fn).pop();
+}
 
 export default findLastBy;

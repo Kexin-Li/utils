@@ -9,9 +9,9 @@
  * difference([1,2,3], [1,2,4])
  * // => false
  */
-const difference = (a, b) => {
+function difference(a, b) {
   const s = new Set(b);
   return a.filter(x => !s.has(x));
-};
+}
 
 export default difference;

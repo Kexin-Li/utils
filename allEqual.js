@@ -11,6 +11,8 @@
  * allEqual([1,1,1,1])
  * // => true
  */
-const allEqual = arr => arr.every(val => val === arr[0]);
+function allEqual(arr) {
+  return arr.every(val => val === arr[0]);
+}
 
 export default allEqual;

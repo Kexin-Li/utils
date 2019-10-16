@@ -8,6 +8,8 @@
  * findLast([1,2,3])
  * // => 3
  */
-const findLast = arr => arr[arr.length - 1];
+function findLast(arr) {
+  return arr[arr.length - 1];
+}
 
 export default findLast;

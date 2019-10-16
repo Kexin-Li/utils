@@ -8,6 +8,8 @@
  * capitalize('abc')
  * // => Abc
  */
-const capitalize = ([first, ...rest]) => first.toUpperCase() + rest.join('');
+function capitalize([first, ...rest]) {
+  return first.toUpperCase() + rest.join('');
+}
 
 export default capitalize;

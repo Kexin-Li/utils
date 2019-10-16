@@ -12,7 +12,8 @@
  * indexOfAll([1,2,3,4], 5)
  * // => []
  */
-const indexOfAll = (arr, val) =>
-  arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
+function indexOfAll(arr, val) {
+  return arr.reduce((acc, el, i) => (el === val ? [...acc, i] : acc), []);
+}
 
 export default indexOfAll;

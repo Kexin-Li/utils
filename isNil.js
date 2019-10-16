@@ -11,6 +11,8 @@
  * isNil(2)
  * // => false
  */
-const isNil = val => val === undefined || val === null;
+function isNil(val) {
+  return val === undefined || val === null;
+}
 
 export default isNil;

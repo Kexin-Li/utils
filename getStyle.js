@@ -1,5 +1,5 @@
 /**
- * 计算某一个元素的样式
+ * 计算某一个元素的某种样式
  *
  * @param {element} el
  * @param {string} ruleName

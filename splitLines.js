@@ -1,5 +1,5 @@
 /**
- * 按行切割
+ * 按行切割字符串
  *
  * @param {string} str
  * @returns {array}

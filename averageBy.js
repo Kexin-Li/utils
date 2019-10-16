@@ -1,5 +1,5 @@
 /**
- * 求嵌套数组中位数
+ * 计算嵌套数组中位数
  *
  * @param {array} arr target array
  * @param {function | string} fn filter function or string

@@ -8,6 +8,8 @@
  * digitize(1234567)
  * // => [1,2,3,4,5,6,7]
  */
-const digitize = n => [...`${n}`].map(i => parseInt(i));
+function digitize(n) {
+  return [...`${n}`].map(i => parseInt(i));
+}
 
 export default digitize;

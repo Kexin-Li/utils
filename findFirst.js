@@ -8,6 +8,8 @@
  * findFirst([1,2,3])
  * // => 1
  */
-const findFirst = arr => arr[0];
+function findFirst(arr) {
+  return arr[0];
+}
 
 export default findFirst;

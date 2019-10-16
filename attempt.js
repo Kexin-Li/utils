@@ -9,12 +9,12 @@
  * const res = attempt(a => a + 1, 10)
  * if (res instanceof Error) res = []
  */
-const attempt = (fn, ...args) => {
+function attempt(fn, ...args) {
   try {
     return fn(...args);
   } catch (e) {
     return e instanceof Error ? e : new Error(e);
   }
-};
+}
 
 export default attempt;

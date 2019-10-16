@@ -8,7 +8,8 @@
  * filterNonUnique([1,1,2,3,4])
  * // => [1,2,3,4]
  */
-const filterNonUnique = arr =>
-  arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));
+function filterNonUnique(arr) {
+  return arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));
+}
 
 export default filterNonUnique;

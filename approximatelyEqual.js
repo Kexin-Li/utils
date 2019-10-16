@@ -10,7 +10,8 @@
  * approximatelyEqual(0.8, 0.9, 0.1)
  * // => true
  */
-const approximatelyEqual = (v1, v2, epsilon = 0.001) =>
-  Math.abs(v1 - v2) < epsilon;
+function approximatelyEqual(v1, v2, epsilon = 0.001) {
+  return Math.abs(v1 - v2) < epsilon;
+}
 
 export default approximatelyEqual;

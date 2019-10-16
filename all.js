@@ -12,6 +12,8 @@
  * all([1, 2, 3])
  * // => true
  */
-const all = (arr, fn = Boolean) => arr.every(fn);
+function all(arr, fn = Boolean) {
+  return arr.every(fn);
+}
 
 export default all;

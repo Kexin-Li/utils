@@ -11,6 +11,8 @@
  * isUndefined(null)
  * // => false
  */
-const isUndefined = val => val === undefined;
+function isUndefined(val) {
+  return val === undefined;
+}
 
 export default isUndefined;

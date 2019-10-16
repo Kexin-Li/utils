@@ -10,6 +10,8 @@
  * console.log(11);
  * // => 先打印11，一秒后打印1
  */
-const defer = (fn, ...args) => setTimeout(fn, 1000, ...args);
+function defer(fn, ...args) {
+  return setTimeout(fn, 1000, ...args);
+}
 
 export default defer;

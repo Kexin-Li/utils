@@ -11,6 +11,8 @@
  * isObject(2)
  * // => false
  */
-const isObject = obj => obj === Object(obj);
+function isObject(obj) {
+  return obj === Object(obj);
+}
 
 export default isObject;

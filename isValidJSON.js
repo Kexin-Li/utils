@@ -11,13 +11,13 @@
  * isValidJSON('{"name":"Adam",age:"20"}')
  * // => false
  */
-const isValidJSON = val => {
+function isValidJSON(val) {
   try {
     JSON.parse(val);
     return true;
   } catch (e) {
     return false;
   }
-};
+}
 
 export default isValidJSON;

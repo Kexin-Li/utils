@@ -11,6 +11,8 @@
  * isSymbol(1)
  * // => false
  */
-const isSymbol = val => typeof val === 'symbol';
+function isSymbol(val) {
+  return typeof val === 'symbol';
+}
 
 export default isSymbol;

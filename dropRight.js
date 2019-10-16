@@ -9,6 +9,8 @@
  * dropRight([1,2,3,4,5], 2)
  * // => [1,2,3]
  */
-const dropRight = (arr, n = 1) => arr.slice(0, -n);
+function dropRight(arr, n = 1) {
+  return arr.slice(0, -n);
+}
 
 export default dropRight;

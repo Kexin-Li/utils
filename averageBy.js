@@ -12,9 +12,12 @@
  * averageBy([{a: 1, b: 2}, {a: 2, b: 2}, {a: 3, b: 2}, {a: 4, b: 2}], o => o.b)
  * // => 2
  */
-const averageBy = (arr, fn) =>
-  arr
-    .map(typeof fn === 'function' ? fn : val => val[fn])
-    .reduce((acc, val) => acc + val, 0) / arr.length;
+function averageBy(arr, fn) {
+  return (
+    arr
+      .map(typeof fn === 'function' ? fn : val => val[fn])
+      .reduce((acc, val) => acc + val, 0) / arr.length
+  );
+}
 
 export default averageBy;

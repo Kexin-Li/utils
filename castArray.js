@@ -11,6 +11,8 @@
  * castArray([1])
  * // => [1]
  */
-const castArray = val => (Array.isArray(val) ? val : [val]);
+function castArray(val) {
+  return Array.isArray(val) ? val : [val];
+}
 
 export default castArray;

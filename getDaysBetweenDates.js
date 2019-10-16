@@ -9,7 +9,8 @@
  * getDaysBetweenDates(new Date('2019-10-01'), new Date('2019-10-15'))
  * // => 14
  */
-const getDaysBetweenDates = (dateInitial, dateFinal) =>
-  (dateFinal - dateInitial) / (1000 * 3600 * 24);
+function getDaysBetweenDates(dateInitial, dateFinal) {
+  return (dateFinal - dateInitial) / (1000 * 3600 * 24);
+}
 
 export default getDaysBetweenDates;

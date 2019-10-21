@@ -66,3 +66,4 @@ JavaScript util methods.
 | splitLines             | 按行切割字符串                              |                          |
 | sum                    | 对输入的元素求和                            |                          |
 | timeTaken              | 打印执行一段函数所花的时间                  |                          |
+| removeSpace            | 移除字符串中的空格                          |                          |
